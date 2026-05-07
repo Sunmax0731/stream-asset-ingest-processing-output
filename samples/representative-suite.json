@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "素材取り込み・処理キュー・出力確認 の正常入力を検証する",
+    "items": [
+      {
+        "id": "stream-asset-ingest-processing-output-happy",
+        "title": "素材取り込み・処理キュー・出力確認 happy",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/happy.asset",
+        "operation": "validate",
+        "outputPath": "dist/happy",
+        "owner": "closed-alpha",
+        "durationEstimate": "素材取り込み・処理キュー・出力確認 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "stream-asset-ingest-processing-output-missing",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/missing.asset",
+        "operation": "validate",
+        "outputPath": "dist/missing",
+        "owner": "closed-alpha",
+        "durationEstimate": "素材取り込み・処理キュー・出力確認 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "stream-asset-ingest-processing-output-warning",
+        "title": "素材取り込み・処理キュー・出力確認 warning",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/warning.asset",
+        "operation": "validate",
+        "outputPath": "dist/warning",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "stream-asset-ingest-processing-output-happy",
+        "title": "素材取り込み・処理キュー・出力確認 happy",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/happy.asset",
+        "operation": "validate",
+        "outputPath": "dist/happy",
+        "owner": "closed-alpha",
+        "durationEstimate": "素材取り込み・処理キュー・出力確認 の確認観点"
+      },
+      {
+        "id": "stream-asset-ingest-processing-output-missing",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/missing.asset",
+        "operation": "validate",
+        "outputPath": "dist/missing",
+        "owner": "closed-alpha",
+        "durationEstimate": "素材取り込み・処理キュー・出力確認 の確認観点"
+      },
+      {
+        "id": "stream-asset-ingest-processing-output-warning",
+        "title": "素材取り込み・処理キュー・出力確認 warning",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "assetPath": "samples/warning.asset",
+        "operation": "validate",
+        "outputPath": "dist/warning",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]

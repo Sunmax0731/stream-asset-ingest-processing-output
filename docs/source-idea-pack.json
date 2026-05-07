@@ -1,0 +1,66 @@
+{
+  "rank": 65,
+  "domain": "OBSStreaming",
+  "ideaNo": 3,
+  "ideaName": "素材取り込み・処理キュー・出力確認",
+  "repository": "stream-asset-ingest-processing-output",
+  "publish": "GitHub Release / BOOTH",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/OBSStreaming/created_idea_003_stream-asset-ingest-processing-output",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/OBSStreaming/created_idea_003_stream-asset-ingest-processing-output/idea_003_stream-asset-ingest-processing-output.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "OBSStreaming",
+    "no": 3,
+    "platform": "OBSStreaming",
+    "field": "素材・出力フロー",
+    "integration": "",
+    "idea": "素材取り込み・処理キュー・出力確認",
+    "overview": "配信用素材の取り込み、ノード処理、バッチ実行、録画や出力の確認を一連化する。",
+    "problem": "素材準備、処理、出力確認が手作業だと、配信直前に抜け漏れが起きやすい。",
+    "similar": "OBS Studio, Streamlabs, Touch Portal, Advanced Scene Switcher",
+    "diff": "配信素材の入力から出力確認までを、再実行可能な軽量キューにする。",
+    "parent": "Plugins",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "stream-asset-ingest-processing-output",
+    "repositoryTitle": "stream-asset-ingest-processing-output",
+    "zipFile": "idea_003_stream-asset-ingest-processing-output.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}

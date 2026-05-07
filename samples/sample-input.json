@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "stream-asset-ingest-processing-output",
+    "title": "素材取り込み・処理キュー・出力確認"
+  },
+  "items": [
+    {
+      "id": "stream-asset-ingest-processing-output-happy",
+      "title": "素材取り込み・処理キュー・出力確認 happy",
+      "status": "ready",
+      "tags": [
+        "obsstreaming"
+      ],
+      "assetPath": "samples/happy.asset",
+      "operation": "validate",
+      "outputPath": "dist/happy",
+      "owner": "closed-alpha",
+      "durationEstimate": "素材取り込み・処理キュー・出力確認 の確認観点"
+    }
+  ]
+}
