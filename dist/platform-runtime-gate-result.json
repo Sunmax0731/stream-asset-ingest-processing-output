@@ -1,0 +1,8 @@
+{
+  "product": "stream-asset-ingest-processing-output",
+  "platformType": "obs-workflow-tool",
+  "pass": true,
+  "method": "runtime-gate",
+  "manualTest": "not-run-by-codex",
+  "packageTest": true
+}

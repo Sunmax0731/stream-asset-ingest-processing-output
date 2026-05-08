@@ -1,0 +1,11 @@
+{
+  "product": "stream-asset-ingest-processing-output",
+  "title": "素材取り込み・処理キュー・出力確認",
+  "domain": "OBSStreaming",
+  "ideaNo": 3,
+  "platformType": "obs-workflow-tool",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
